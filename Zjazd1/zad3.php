@@ -6,6 +6,9 @@
 <?php
 
 function fibonacci($n){
+	if($n == 0){
+    	return 0;
+    }
     if($n < 3){
         return 1;
     }
@@ -21,8 +24,8 @@ for($i = 0; $i < $n; $i++){
 
 
 for($i = 0; $i < $n; $i++){
-    if($fib[$i] % 2 == 1){
-        echo $i . ". " . $fib[$i] . "<br>";    
+    if($fib[$i] % 2 != 0){
+        echo $i. ". " . $fib[$i] . "<br>";    
     }
     
 }
